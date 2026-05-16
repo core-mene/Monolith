@@ -1,0 +1,131 @@
+# MARK: Slab
+
+- type: tile
+  id: FloorCataConcreteSlabBase
+  name: Cata-tiles-concrete-slab-base
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataConcreteSlabBlack
+  name: Cata-tiles-concrete-slab-black
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+#MARK: Hex concrete tiles
+
+- type: tile
+  id: FloorCataConcreteSlabHex
+  name: Cata-tiles-concrete-slab-hex
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_hex.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+
+# MARK: Sidewalk
+
+- type: tile
+  id: FloorCataConcreteSlabSidewalkBase
+  name: Cata-tiles-concrete-slab-base-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataConcreteSlabSidewalkBlack
+  name: Cata-tiles-concrete-slab-black-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/concrete/concrete_slab_black.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true

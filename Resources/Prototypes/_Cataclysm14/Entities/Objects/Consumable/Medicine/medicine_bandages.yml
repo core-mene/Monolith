@@ -1,0 +1,350 @@
+#MARK: MakeshiftBandage
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineBandageMakeshift
+  name: makeshift bandage
+  description: A makeshift bandage fashioned from a torn piece of cloth. Not sterile, but better than nothing.
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      groups:
+        Brute: -25
+    bloodlossModifier: -4
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineBandageMakeshift
+    count: 10
+
+- type: stack
+  id: ConsumableMedicineBandageMakeshift
+  name: makeshift bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: ConsumableMedicineBandageMakeshift
+  maxCount: 10
+
+#MARK: BoiledBandage
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineBandageBoiled
+  name: boiled bandage
+  description: A cloth bandage that has been boiled for sterilization. More effective than a raw makeshift bandage.
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      groups:
+        Brute: -35
+    bloodlossModifier: -6
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineBandageBoiled
+    count: 10
+
+- type: stack
+  id: ConsumableMedicineBandageBoiled
+  name: boiled bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: ConsumableMedicineBandageBoiled
+  maxCount: 10
+
+#MARK: MedicalGauze
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineBandageMedicalGauze
+  name: medical gauze
+  description: Sterile medical gauze for wound dressing. Effective at controlling bleeding from cuts and punctures.
+  components:
+  - type: Tag
+    tags:
+    - Gauze
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: gauze
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Slash: -15
+        Piercing: -20
+    bloodlossModifier: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineBandageMedicalGauze
+    count: 10
+
+- type: stack
+  id: ConsumableMedicineBandageMedicalGauze
+  name: medical gauze
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
+  spawn: ConsumableMedicineBandageMedicalGauze
+  maxCount: 10
+
+#MARK: ProperBandage
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineBandageProper
+  name: bandage
+  description: A proper adhesive bandage with antiseptic padding. Standard medical supply.
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      groups:
+        Brute: -45
+    bloodlossModifier: -8
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineBandageProper
+    count: 10
+
+- type: stack
+  id: ConsumableMedicineBandageProper
+  name: bandage
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: gauze }
+  spawn: ConsumableMedicineBandageProper
+  maxCount: 10
+
+#MARK: HemostaticPowder
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineHemostaticPowder
+  name: hemostatic powder
+  description: A packet of hemostatic granules designed to rapidly control bleeding. Stings on application.
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      groups:
+        Brute: 2
+    bloodlossModifier: -15
+    delay: 0.5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineHemostaticPowder
+    count: 5
+
+- type: stack
+  id: ConsumableMedicineHemostaticPowder
+  name: hemostatic powder
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: brutepack }
+  spawn: ConsumableMedicineHemostaticPowder
+  maxCount: 5
+
+#MARK: Antiseptic
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineAntiseptic
+  name: antiseptic
+  description: Isopropyl alcohol solution for cleaning and disinfecting wounds. Prevents infection.
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: ointment
+  - type: Item
+    heldPrefix: ointment
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Heat: -12
+        Cold: -12
+        Shock: -12
+        Caustic: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineAntiseptic
+    count: 10
+
+- type: stack
+  id: ConsumableMedicineAntiseptic
+  name: antiseptic
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: ConsumableMedicineAntiseptic
+  maxCount: 10
+
+#MARK: MakeshiftAntiseptic
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineAntisepticMakeshift
+  name: makeshift antiseptic
+  description: An improvised antiseptic made from ethanol. Less effective than proper disinfectant, but serviceable.
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: ointment
+  - type: Item
+    heldPrefix: ointment
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Heat: -8
+        Cold: -8
+        Shock: -8
+        Caustic: -6
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineAntisepticMakeshift
+    count: 10
+
+- type: stack
+  id: ConsumableMedicineAntisepticMakeshift
+  name: makeshift antiseptic
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: ConsumableMedicineAntisepticMakeshift
+  maxCount: 10
+
+#MARK: AntisepticPowder
+- type: entity
+  parent: BaseHealingItem
+  id: ConsumableMedicineAntisepticPowder
+  name: antiseptic powder
+  description: Bismuth formic iodide in powder form. An effective chemical wound cleanser.
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Sprite
+    sprite: _DV/Objects/Specific/medical.rsi # TODO: Replace with Cataclysm14-specific sprites
+    state: ointment
+  - type: Item
+    heldPrefix: ointment
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Heat: -15
+        Cold: -15
+        Caustic: -12
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ConsumableMedicineAntisepticPowder
+    count: 8
+
+- type: stack
+  id: ConsumableMedicineAntisepticPowder
+  name: antiseptic powder
+  icon: { sprite: "/Textures/_DV/Objects/Specific/medical.rsi", state: ointment }
+  spawn: ConsumableMedicineAntisepticPowder
+  maxCount: 8

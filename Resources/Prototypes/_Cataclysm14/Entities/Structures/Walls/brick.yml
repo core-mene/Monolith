@@ -1,0 +1,31 @@
+- type: entity
+  parent: BaseStructureWallCataTierTwo
+  id: StructureWallCataBrickRedRedBase
+  name: red brick wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
+  - type: IconSmooth
+    key: walls
+    base: brick
+  - type: Construction
+    graph: StructureWallCataBrickRedRedBase
+    node: StructureWallCataBrickRedRedBase
+
+- type: entity
+  parent: BaseStructureWallCataTierThree
+  id: StructureWallCataBrickRedRedReinforced
+  name: reinforced red brick wall
+  components:
+  - type: Sprite
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
+  - type: Icon
+    sprite: _Cataclysm14/Structures/Walls/brick_red_red.rsi
+  - type: IconSmooth
+    key: walls
+    base: brick
+  - type: Construction
+    graph: Rebar
+    node: StructureWallCataBrickRedRedReinforced

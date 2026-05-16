@@ -1,0 +1,14 @@
+- type: soundCollection
+  id: Cataclysm14LobbyMusic
+  files:
+    - /Audio/_Cataclysm14/Lobby/Dead_Frontier_Track7.ogg
+    - /Audio/_Cataclysm14/Lobby/Fallout_New_Vegas_Begin_Again.ogg
+    - /Audio/_Cataclysm14/Lobby/Fallout_New_Vegas_Begin_Again_Ambiance_Version.ogg
+    - /Audio/_Cataclysm14/Lobby/Left_4_Dead_Menu_Theme.ogg
+    - /Audio/_Cataclysm14/Lobby/Metro_2033_[OST]_Don't_Forget.ogg
+    - /Audio/_Cataclysm14/Lobby/Metro_2033_[OST]_Main_Theme.ogg
+    - /Audio/_Cataclysm14/Lobby/Metro_2033_[OST]_The_Anomaly.ogg
+    - /Audio/_Cataclysm14/Lobby/Metro_2033_[OST]_The_Chase.ogg
+    - /Audio/_Cataclysm14/Lobby/S.T.A.L.K.E.R._2_Анастимоза_Хризантеми.ogg
+    - /Audio/_Cataclysm14/Lobby/Madoi_The_Maid_House_Chiller.ogg
+    - /Audio/_Cataclysm14/Lobby/Ethereal_Snake_Face_Off.ogg

@@ -1,0 +1,263 @@
+#regular climat / grassland related tiles -> dirt, grass of regular seasons excluding winter
+
+# MARK: Dirty
+- type: tile
+  id: FloorCataGrassBaseDirty
+  name: Cata-tiles-grass-base-dirty
+  sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
+  variants: 13
+  placementVariants:
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.4
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataGrassAutumnDirty
+  name: Cata-tiles-grass-autumn-dirty
+  sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
+  variants: 13
+  placementVariants:
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.4
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataGrassSummerDirty
+  name: Cata-tiles-grass-summer-dirty
+  sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
+  variants: 13
+  placementVariants:
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 1.3
+  - 0.8
+  - 0.4
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.4
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+# MARK: Clean
+
+- type: tile
+  id: FloorCataGrassBaseClean
+  name: Cata-tiles-grass-base-clean
+  sprite: /Textures/_Cataclysm14/Tiles/grass/grass.png
+  variants: 13
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass/double_edge.png
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataGrassAutumnClean
+  name: Cata-tiles-grass-autumn-clean
+  sprite: /Textures/_Cataclysm14/Tiles/grass_autumn/grass_autumn.png
+  variants: 13
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass_autumn/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass_autumn/double_edge.png
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataGrassSummerClean
+  name: Cata-tiles-grass-summer-clean
+  sprite: /Textures/_Cataclysm14/Tiles/grass_summer/grass_summer.png
+  variants: 13
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/grass_summer/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/grass_summer/double_edge.png
+  baseTurf: FloorCataDirt
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+#MARK: Dirt
+
+- type: tile
+  id: FloorCataDirt
+  name: Cata-tiles-dirt
+  sprite: /Textures/_Cataclysm14/Tiles/dirt/dirt.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/dirt/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/dirt/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/dirt/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/dirt/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/dirt/double_edge.png
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true

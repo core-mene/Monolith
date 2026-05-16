@@ -1,0 +1,272 @@
+#MARK: Asphalt
+
+- type: tile
+  id: FloorCataAsphaltBase
+  name: Cata-tiles-asphalt-base
+  sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  # itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataAsphaltRed
+  name: Cata-tiles-asphalt-red
+  sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  # itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true
+
+#MARK: Road Markings
+#actually an entity but ssssshhhhh
+
+- type: entity
+  id: FloorRoadMarkingWhite
+  name: white road markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with white paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
+    state: line_0
+    drawdepth: ThickWire
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
+    state: line_4
+  - type: Clickable
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+  - type: IconSmooth
+    key: RoadMarkings
+    base: line_
+    mode: CardinalFlags
+
+- type: entity
+  parent: FloorRoadMarkingWhite
+  id: FloorRoadMarkingYellow
+  name: yellow road markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with yellow paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
+    color: "#cdc208"
+    state: line_0
+    drawdepth: ThickWire
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line.rsi
+    color: "#cdc208"
+    state: line_4
+
+- type: entity
+  id: FloorRoadCrossingWhite
+  name: white road crossing markings
+  description: Some painted on road crossing markings. Looks easy enough to remove by hitting it. Those ones are made with white paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    state: line_0
+    drawdepth: ThickWire
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    state: line_4
+  - type: Clickable
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+  - type: IconSmooth
+    key: RoadMarkings
+    base: line_
+    mode: CardinalFlags
+
+- type: entity
+  parent: FloorRoadCrossingWhite
+  id: FloorRoadCrossingYellow
+  name: yellow road crossing markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with yellow paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    color: "#cdc208"
+    state: line_0
+    drawdepth: ThickWire
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_crossing.rsi
+    color: "#cdc208"
+    state: line_4
+
+- type: entity
+  id: FloorRoadMarkingStopSolidWhite
+  name: white solid road stop markings
+  description: Some painted on road markings. Looks easy enough to remove by hitting it. Those ones are made with white paint.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_solid
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_solid
+  - type: Clickable
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Appearance
+
+- type: entity
+  parent: FloorRoadMarkingStopSolidWhite
+  id: FloorRoadMarkingStopSolidYellow
+  name: yellow solid road stop markings
+  components:
+  - type: Sprite
+    state: white_solid
+    color: "#cdc208"
+  - type: Icon
+    state: white_solid
+    color: "#cdc208"
+
+- type: entity
+  parent: FloorRoadMarkingStopSolidWhite
+  id: FloorRoadMarkingStopBrokenWhite
+  name: white broken road stop markings
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+
+- type: entity
+  parent: FloorRoadMarkingStopSolidWhite
+  id: FloorRoadMarkingStopBrokenYellow
+  name: yellow broken road stop markings
+  components:
+  - type: Sprite
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+    color: "#cdc208"
+  - type: Icon
+    sprite: /Textures/_Cataclysm14/Tiles/road/road_line_stop.rsi
+    state: white_broken
+    color: "#cdc208"
+
+# MARK: Sidewalk
+
+- type: tile
+  id: FloorCataAsphaltSidewalkBase
+  name: Cata-tiles-asphalt-base-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/road/asphalt.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  # itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataAsphaltSidewalkRed
+  name: Cata-tiles-asphalt-red-sidewalk
+  sprite: /Textures/_Cataclysm14/Tiles/road/asphalt_red.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/road/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/road/double_edge.png
+  baseTurf: FloorCataRockBase # Delta V
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  # itemDrop: FloorTileItemDirt # Delta V
+  heatCapacity: 10000
+  weather: true

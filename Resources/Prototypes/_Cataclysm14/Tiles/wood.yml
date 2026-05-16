@@ -1,0 +1,35 @@
+- type: tile
+  id: FloorCataWoodPlankVertical
+  name: Cata-tiles-floor-plank-vertical
+  sprite: /Textures/_Cataclysm14/Tiles/wood/plank_vertical.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
+
+- type: tile
+  id: FloorCataWoodPlankHorizontal
+  name: Cata-tiles-floor-plank-horizontal
+  sprite: /Textures/_Cataclysm14/Tiles/wood/plank_horizontal.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorCataConcreteSlabBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  # isSubfloor: true
+  # weather: true
