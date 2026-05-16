@@ -83,7 +83,10 @@ public abstract class SharedCombatModeSystem : EntitySystem
         SetMouseRotatorComponents(entity, value);
     }
 
-    private void SetMouseRotatorComponents(EntityUid uid, bool value)
+    //EphemeralSpace START
+    public void SetMouseRotatorComponents(EntityUid uid, bool value)
+    //EphemeralSpace END
+
     {
         if (value)
         {
