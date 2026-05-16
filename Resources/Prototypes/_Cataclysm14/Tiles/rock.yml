@@ -1,0 +1,83 @@
+#stones (polished rock) rocks(rough) floors
+
+#MARK: Rock
+- type: tile
+  id: FloorCataRockBase
+  name: Cata-tiles-rock-base
+  sprite: /Textures/_Cataclysm14/Tiles/rock/rock.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/rock/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/rock/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/rock/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/rock/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/rock/double_edge.png
+  baseTurf: FloorCataRockBlack
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataRockBlack
+  name: Cata-tiles-rock-black
+  sprite: /Textures/_Cataclysm14/Tiles/rock_black/rock_black.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/rock_black/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/rock_black/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/rock_black/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/rock_black/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/rock_black/double_edge.png
+  baseTurf: FloorCataRockBlack
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: FloorCataRockSand
+  name: Cata-tiles-rock-sand
+  sprite: /Textures/_Cataclysm14/Tiles/rock_sand/rock_sand.png
+  variants: 3
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSprites:
+    SouthEast: /Textures/_Cataclysm14/Tiles/rock_sand/single_edge.png
+    NorthEast: /Textures/_Cataclysm14/Tiles/rock_sand/single_edge.png
+    NorthWest: /Textures/_Cataclysm14/Tiles/rock_sand/single_edge.png
+    SouthWest: /Textures/_Cataclysm14/Tiles/rock_sand/single_edge.png
+    South: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
+    East: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
+    North: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
+    West: /Textures/_Cataclysm14/Tiles/rock_sand/double_edge.png
+  baseTurf: FloorCataRockBase
+  deconstructTools: [ PryingT1 ] #Cataclysm14, Prying -> PryingT1 for cataclysm qualities
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGrassDark # Delta V
+  heatCapacity: 10000
+  weather: true

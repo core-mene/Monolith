@@ -1,0 +1,189 @@
+#MARK: Rebar
+- type: construction
+  name: rebar assembly
+  id: CraftStructureWallCataRebar
+  graph: Rebar
+  startNode: start
+  targetNode: Rebar
+  category: construction-category-structures-walls-cata
+  description: A large structural assembly made out of metal.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/rebar.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: MetalReinforced
+- type: construction
+  name: reinforced metal wall
+  id: CraftStructureWallCataMetalReinforced
+  graph: Rebar
+  startNode: start
+  targetNode: StructureWallCataMetalReinforced
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/metal_reinforced.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: BrickRedRedReinforced
+- type: construction
+  name: reinforced red brick wall
+  id: CraftStructureWallCataBrickRedRedReinforced
+  graph: Rebar
+  startNode: start
+  targetNode: StructureWallCataBrickRedRedReinforced
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/brick_red_red.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: ConcreteReinforcedWhite
+- type: construction
+  name: white reinforced concrete wall
+  id: CraftStructureWallCataConcreteReinforcedWhite
+  graph: Rebar
+  startNode: start
+  targetNode: StructureWallCataConcreteReinforcedWhite
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_reinforced_white.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: BrickRedRedBase
+- type: construction
+  name: red brick wall
+  id: CraftStructureWallCataBrickRedRedBase
+  graph: StructureWallCataBrickRedRedBase
+  startNode: start
+  targetNode: StructureWallCataBrickRedRedBase
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/brick_red_red.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: ConcreteSolidWhite
+- type: construction
+  name: white solid concrete wall
+  id: CraftStructureWallCataConcreteSolidWhite
+  graph: StructureWallCataConcreteSolidWhite
+  startNode: start
+  targetNode: StructureWallCataConcreteSolidWhite
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/concrete_solid_base.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: MetalSimpleBase
+- type: construction
+  name: simple metal wall
+  id: CraftStructureWallCataMetalSimpleBase
+  graph: StructureWallCataMetalSimpleBase
+  startNode: start
+  targetNode: StructureWallCataMetalSimpleBase
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/metal_simple.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: WoodPlankBase
+- type: construction
+  name: wooden plank wall
+  id: CraftStructureWallCataWoodPlankBase
+  graph: StructureWallCataWoodPlankBase
+  startNode: start
+  targetNode: StructureWallCataWoodPlankBase
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/wood_plank_base.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: WoodLogBase
+- type: construction
+  name: wooden log wall
+  id: CraftStructureWallCataWoodLogBase
+  graph: StructureWallCataWoodLogBase
+  startNode: start
+  targetNode: StructureWallCataWoodLogBase
+  category: construction-category-structures-walls-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Walls/wood_log.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: WoodHouse
+- type: construction
+  name: wooden residential door
+  id: CraftDoorCataWoodHouse
+  graph: DoorCataWoodHouse
+  startNode: start
+  targetNode: DoorCataWoodHouse
+  category: construction-category-structures-doors-cata
+  description: A sturdy solid wall.
+  icon:
+    sprite: /Textures/_Cataclysm14/Structures/Doors/wood_house.rsi
+    state: closed
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
